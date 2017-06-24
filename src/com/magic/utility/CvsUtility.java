@@ -16,10 +16,10 @@ public class CvsUtility {
 
 	static Logger log = Logger.getLogger(CvsUtility.class);
 
-	private static final String[] FILE_HEADER_MAPPING = { "grade", "ponumber", "tenant" };
+	private static final String[] FILE_HEADER_MAPPING = { "coursenumber", "ponumber", "tenant" };
 
 	// Student attributes
-	private static final String GRADE = "grade";
+	private static final String COURSENUMBER = "coursenumber";
 	private static final String PONUMBER = "ponumber";
 	private static final String TENANT = "tenant";
 
@@ -50,7 +50,7 @@ public class CvsUtility {
 			for (int i = 1; i < csvRecords.size(); i++) {
 				CSVRecord record = (CSVRecord) csvRecords.get(i);
 				// Create a new student object and fill his data
-				GradePONumber gradePONumber = new GradePONumber(record.get(GRADE), record.get(PONUMBER),
+				GradePONumber gradePONumber = new GradePONumber(record.get(COURSENUMBER), record.get(PONUMBER),
 						record.get(TENANT));
 				gradePONumberList.add(gradePONumber);
 			}

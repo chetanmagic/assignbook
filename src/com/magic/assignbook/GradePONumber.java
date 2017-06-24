@@ -2,14 +2,14 @@ package com.magic.assignbook;
 
 public class GradePONumber {
 
-	private String grade;
+	private String courseNumber;
 	private String poNumber;
 	private String tenantId;
 
-	public GradePONumber(String grade, String poNumber, String tenantId) {
+	public GradePONumber(String courseNumber, String poNumber, String tenantId) {
 		// TODO Auto-generated constructor stub
 		super();
-		this.grade = grade;
+		this.courseNumber = courseNumber;
 		this.poNumber = poNumber;
 		this.tenantId = tenantId;
 	}
@@ -22,12 +22,12 @@ public class GradePONumber {
 		this.tenantId = tenantId;
 	}
 
-	public String getGrade() {
-		return grade;
+	public String getCourseNumber() {
+		return courseNumber;
 	}
 
-	public void setGrade(String grade) {
-		this.grade = grade;
+	public void setCourseNumber(String courseNumber) {
+		this.courseNumber = courseNumber;
 	}
 
 	public String getPoNumber() {
